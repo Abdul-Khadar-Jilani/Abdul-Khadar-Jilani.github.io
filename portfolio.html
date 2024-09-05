@@ -468,6 +468,7 @@ Projects:
     Question: ${question}
     `;
   try {
+    const apikey=apiKey;
     console.log('Sending API request...');
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
