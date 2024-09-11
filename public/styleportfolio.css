@@ -115,7 +115,7 @@ header {
           padding: 10px 20px;
           color: var(--base);
           transition: background-color 0.3s ease;
-
+          justify-content: center;
           &:hover {
             background-color: var(--base-100);
             border-radius: 10px;
@@ -210,6 +210,29 @@ header {
       background-color: var(--base);
     }
   }
+  &.ai {
+    background: linear-gradient(45deg, #00c6ff, #0072ff, #00ffcc, #00ccff); /* Initial gradient with multiple colors */
+    background-size: 300% 300%; /* To create a smooth color flow */
+    color: #000000;
+    animation: gradientAnimation 10s ease infinite; /* Longer, smooth animation */
+    transition: color 0.3s ease, background 0.3s ease;
+    &:hover {
+      color: #ffffff; /* Hover text color */
+      background: linear-gradient(45deg, #ff0080, #ff8c00, #ff0080, #ffdd57); /* New gradient on hover */
+      background-size: 300% 300%; /* Smooth hover effect as well */
+    }
+  }
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%; /* Smooth transition in the middle */
+}
+100% {
+    background-position: 0% 50%; /* Loop back to the start */
+}
 }
 h1 {
   font-size: 64px;
@@ -958,6 +981,7 @@ footer p {
   font-size: 14px;
   margin-right: 10px;
   background-color: #262628;
+  color: white;
 }
 
 .chat-button {
