@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABDUL KHADAR JILANI Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styleportfolio.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="logo-holder">
+        <div class="logo">A</div>
+        <div class="logo-text">Abdul Khadar Jilani</div>
+      </a>
+      <nav>
+        <ul id="menu">
+          <li><a href="#about" onClick="toggleMobileMenu();">About</a></li>
+          <li><a href="#skills" onClick="toggleMobileMenu();">Skills</a></li>
+          <li>
+            <a href="#projects" onClick="toggleMobileMenu();">Projects</a>
+          </li>
+          <li><a href="#ask-ai" onClick="toggleMobileMenu();">Ask AI</a></li>
+          <li>
+            <a href="#contact" onClick="toggleMobileMenu();" class="button">Contact</a>
+          </li>
+        </ul>
+        <a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+          <svg
+            class="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="2"
+              d="M5 7h14M5 12h14M5 17h10"
+            />
+          </svg>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about" class="hero container">
+        <div class="leftSection">
+          <h1><small>Hi I'm </small>Abdul Khadar Jilani</h1>
+          <p>
+            I am a recent graduate with a Bachelor of Technology in Computer Science, specializing in Artificial Intelligence and Data Science. My journey has equipped me with a strong foundation in Python, machine learning, and data science. I am particularly enthusiastic about developing innovative web applications that leverage generative AI and large language models (LLMs).
+            <span
+              >I am constantly exploring new advancements in AI and data science, eager to apply my skills in dynamic projects that push the boundaries of technology and create meaningful change.</span
+            >
+          </p>
+          <div class="call-to-action">
+            <a href="ABDUL_KHADAR_JILANI_RESUME.pdf" class="button black">View Resume</a>
+            <a href="#contact" class="button white">Contact Me</a>
+          </div>
+          <div class="social-links">
+            <a href="#">
+              <img src="/imgs/github.png" alt="github" width="48" />
+            </a>
+            <a href="#">
+              <img src="/imgs/linkedin.png" alt="linkedin" width="48" />
+            </a>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="bgremoved.png" alt="" width="100%" />
+        </div>
+      </section>
+       <section class="logos container">
+        <div class="marquee">
+          <div class="track">
+            <img src="/imgs/html.png" alt="HTML" />
+            <img src="/imgs/css.png" alt="CSS" />
+            <img src="/imgs/javascript.png" alt="JavaScript" />
+            <img src="/imgs/python.png" alt="Node.js" />
+            <img src="/imgs/mysql.png" alt="GraphQL" />
+            <img src="/imgs/postgre.png"/>
+            <img src="/imgs/java.png"/>
+            <img src="/imgs/docker.png"/>
+            <img src="/imgs/githubicon.png"/>
+            <img src="/imgs/html.png" alt="HTML" />
+            <img src="/imgs/css.png" alt="CSS" />
+            <img src="/imgs/javascript.png" alt="JavaScript" />
+            <img src="/imgs/python.png" alt="Node.js" />
+            <img src="/imgs/mysql.png" alt="GraphQL" />
+            <img src="/imgs/postgre.png"/>
+            <img src="/imgs/java.png"/>
+            <img src="/imgs/docker.png"/>
+            <img src="/imgs/githubicon.png"/>
+            
+          </div>
+        </div>
+      </section>
+      
+       
+      <section id="skills" class="skills container">
+        <h2>
+          <small> About Me </small>
+          Skills
+        </h2>
+        <div class="holder-blue">
+          <div class="left-column">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+            </ul>
+            <h3>Backend</h3>
+            <ul>
+              <li>Python</li>
+              <li>Django</li>
+              <li>Flask</li>
+              <li>Node.js</li>
+              <li>REST API</li>
+
+            </ul>
+            <h3>Databases</h3>
+            <ul>
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+            </ul>
+            <h3>Data Science and Machine Learning</h3>
+            <ul>
+              <li>Artificial Intelligence</li>
+              <li>Machine Learning</li>
+              <li>Natural Language Processing (NLP)</li>
+              <li>Deep Learning</li>
+              <li>Data Visualization</li>
+              <li>Pandas</li>
+              <li>NLP</li>
+              <li>PyTorch</li>
+              <li>Tensorflow</li>
+            </ul>
+            <h3>Tools</h3>
+            <ul>
+              <li>Docker</li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>VS Code</li>
+              <li>Postman</li>
+            </ul>
+          </div>
+          <div class="right-column">
+            <h3>A bit about me</h3>
+            <p>
+              An Artificial Intelligence and Data Science graduate with an 85% overall, I am deeply passionate about the intersection of AI and web development. With a solid foundation in Python, machine learning, and data science, I specialize in creating generative AI applications, including those leveraging large language models (LLMs). My skills encompass both frontend and backend development, with a particular interest in building robust, scalable backend systems. I am driven by a commitment to continuous learning and innovation, always aiming to harness the latest advancements in AI to develop positive, impactful web solutions.
+            </p>
+            <h3>Education</h3>
+            <ul>
+              <li><strong>Bachelor of Technology in Computer Science (Artificial Intelligence and Data Science)</strong><br>
+                Seshadri Rao Gudlavalleru Engineering College (SRGEC) <br> <strong>CGPA - 8.98/10.0</strong><br>
+                2020 - 2024 | Completed</li>
+              <li><strong>Higher Secondary Education | Mathematics and Science</strong><br>
+              Sri Chaitanya Junior College <br><strong>CGPA - 9.6/10.0</strong><br>
+              2018 - 2020 | Completed</li>
+              <li><strong>Secondary School Certificate (I - X)</strong><br>
+                Hemasree Hayagreeva E.M School <br><strong>GPA - 9.5/10.0</strong><br>
+                2017 - 2018 | Completed </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="work-experience container">
+        <h2>
+          <small>Recent</small>
+          Work Experience
+        </h2>
+        <div class="jobs">
+          <article>
+            <figure>
+              <div>
+                <img src="./imgs/workplace-1.jpg" alt="Workplace 1 - YouTube Creator" width="100%" />
+                <figcaption>
+                  Workplace - 1 YouTube Creator
+                </figcaption>
+              </div>
+            </figure>
+            <h3>YouTube Content Creator</h3>
+            <div>2020-current</div>
+            <p>Content creation online teaching people about how to code using HTML, CSS, JS.</p>
+          </article>
+          <article>
+            <figure>
+              <div>
+                <img src="./imgs/workplace-2.jpg" alt="Workplace 2 - Moshi Moshi Marketing" width="100%" />
+                <figcaption>
+                  Workplace - Moshi Moshi Marketing
+                </figcaption>
+              </div>
+            </figure>
+            <h3>Moshi Moshi Marketing</h3>
+            <div>20018-2020</div>
+            <p>Marketing agency building websites and programming them from the ground up. </p>
+          </article>
+          <article>
+            <figure>
+              <div>
+                <img src="./imgs/workplace-3.jpg" alt="Workplace 3 - Chamber of Commerce" width="100%" />
+                <figcaption>
+                  Workplace - Chamber of Commerce
+                </figcaption>
+              </div>
+            </figure>
+            <h3>Chamber of Commerce</h3>
+            <div>2013-2018</div>
+            <p>A small to large business organisation that helps facilitate advice and support.</p>
+          </article>
+          
+        </div>
+      </section> -->
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.webp"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">GenAi Database Manager</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Abdul-Khadar-Jilani/Gemini-DB-Analysis'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://jilani-genaidb.streamlit.app/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.webp"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Chat with PDF</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Abdul-Khadar-Jilani/ChatPDF'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://jilani-chatpdf.streamlit.app/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.webp"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">AI Drug Recommendation</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Abdul-Khadar-Jilani/Drug_AI'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://drug-ai.onrender.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-5.webp"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Eye Blinking based Strain Analysis</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Abdul-Khadar-Jilani/Strain-Analysis-Based-On-Eye-Blinking'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='hhttps://github.com/Abdul-Khadar-Jilani/Strain-Analysis-Based-On-Eye-Blinking'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-4.webp"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">M-pox Visualization</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Abdul-Khadar-Jilani/mpox-country-wise'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://mpox-country-wise-jilani.streamlit.app/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ask-ai" class="ask-ai">
+        <div class="chatbox">
+          <div class="chatbox-header">
+            <h3>Ask AI</h3>
+          </div>
+          <div class="chatbox-body" id="chat-history">
+            <!-- Chat history will be dynamically added here -->
+          </div>
+          <div class="chatbox-footer">
+            <input type="text" id="ask-input" class="chat-input" placeholder="What are the hobbies of Jilani...">
+            <button id="ask-button" class="chat-button">Send</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="title"><small>Get in Touch</small>Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:jilaniabdulgec@gmail.com">jilaniabdulgec@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="../imgs/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/abdulkhadarjilani/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#ask-ai">Ask AI</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p><strong>Abdul's Portfolio </strong><br>
+      Thank you for visiting my personal portfolio website. Connect with me over socials.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
