@@ -22,6 +22,7 @@ app.post('/api/chat', async (req, res) => {
 
   const prompt = `
   I am providing you with the resume of Abdul Khadar Jilani. Based on the resume, please answer the following question.
+  Please don't mention I provided you with the resume in response
 
   Resume:
   ${resumeText}
@@ -30,21 +31,21 @@ app.post('/api/chat', async (req, res) => {
   `;
 
   try {
-    const response = await fetch('https://api.openai.com/v1/chat/completions', {
+    const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${process.env.API_KEY}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: "gpt-3.5-turbo",
+        model: "llama-3.3-70b-versatile",
         messages: [{ role: "user", content: prompt }],
-        max_tokens: 150,
+        max_tokens: 540,
       })
     });
 
     if (!response.ok) {
-      return res.status(response.status).json({ error: `OpenAI API Error: ${response.statusText}` });
+      return res.status(response.status).json({ error: `Groq API Error: ${response.statusText}` });
     }
 
     const data = await response.json();

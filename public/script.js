@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Display user's question
     const userMessageElement = document.createElement('div');
     userMessageElement.classList.add('chat-message', 'user');
-    userMessageElement.textContent = question;
+    userMessageElement.innerHTML = `👤 ${question}`;
     chatHistoryElement.appendChild(userMessageElement);
   
     // Clear the input field
@@ -41,14 +41,21 @@ document.addEventListener('DOMContentLoaded', function() {
     - Phone: +91 7416559466
     - LinkedIn: https://linkedin.com/in/abdulkhadarjilani
     - GitHub: https://github.com/Abdul-Khadar-Jilani
-    
+    Summary:
+      A passionate AI and Data Science graduate with a strong foundation in Python, web development, and machine learning. Proficient in building interactive dashboards, predictive models, and generative AI applications.
+
     Experience:
-    1. Bluestock Fintech | SDE Intern (Aug 2024 - Present)
+    1. Eruvaka Technologies | Data Analyst Intern (Sep 2024 - Present)
+      - Built interactive dashboards using Looker Studio and BigQuery to visualize real-time IoT data, improving decision-making efficiency for aquaculture operations.
+      - Optimized data pipelines by writing complex SQL queries in BigQuery, reducing query runtime by 30%.
+      - Analyzed and visualized key metrics like pond conditions and survival rates, contributing to a 15% increase in early detection of potential issues.
+
+    2. Bluestock Fintech | SDE Intern (Aug 2024 - Present)
        - Led the development of an IPO web application and REST API using Python, Django, and PostgreSQL.
        - Built and optimized backend processes, focused on database design, API development, and authentication.
        - Engineered the front-end using HTML, CSS, JavaScript, and Bootstrap 5.
     
-    2. SmartInternz | Machine Learning and Deep Learning Intern (Jan 2023 - May 2023)
+    3. SmartInternz | Machine Learning and Deep Learning Intern (Jan 2023 - May 2023)
        - Applied machine learning and deep learning algorithms to improve predictive accuracy by 20%.
        - Achieved 92% accuracy in face and object recognition tasks by developing and fine-tuning CNNs and RNNs.
     
@@ -59,23 +66,34 @@ document.addEventListener('DOMContentLoaded', function() {
       Sri Chaitanya Junior College | CGPA: 9.65/10
     
     Skills:
-    - Programming Languages: C, Python, Java
-    - Web Technologies: HTML, CSS, JavaScript, PHP, Bootstrap 5, MySQL, MongoDB
+    - Programming Languages: Python, JavaScript, C
+    - Web Technologies: HTML5, CSS3, PHP, Bootstrap 5, MySQL, MongoDB
+    - Data Analytics and Visualization: Microsoft PowerBI, Google Looker Studio, Google BigQuery, SQL
     - Tools and APIs: Git, GitHub, VS Code, Postman, Docker, Huggingface, LLMs, GenAI APIs
-    - Frameworks and Libraries: Django, Flask, RESTful API, TensorFlow, PyTorch, Transformers, Langchain
-    
+    - Frameworks and Libraries: Django, Flask, Pandas, TensorFlow, PyTorch, Langchain
+    - Coursework: Data Structures, Algorithms, OOPs, Artificial Intelligence, Machine Learning, Big Data
+   
     Projects:
-    1. Advanced Chatbot and PDF Interaction Application:
-       - Developed using Python, Langchain, Huggingface, and LLMs with Retrieval-Augmented Generation (RAG).
-    
-    2. GenAI-DBManager powered by Gemini API:
-       - Built a text-to-query functionality using Python, SQLite, Streamlit, and the Gemini API for efficient data retrieval.
-    
-    3. AI-Based Drug Recommendation System:
-       - Developed a drug recommendation system using Python, NLTK, Scikit-Learn, achieving 96% accuracy.
-    
-    4. Integrating Deep Learning for Eye-Blinking Based Strain Analysis:
-       - Achieved 98% accuracy in eye strain analysis using OpenCV and Deep Learning techniques.
+1. Advanced Chatbot and PDF Interaction Application
+   - Developed using Python, Langchain, Huggingface, and LLMs with Retrieval-Augmented Generation (RAG).
+   - Enhanced user experience through advanced conversational AI and efficient document management.
+
+2. GenAI-DBManager powered by Gemini API
+   - Integrated text-to-query functionality to enhance data retrieval by 25%.
+   - Simplified SQL query generation for non-technical users, achieving a 95% query accuracy.
+
+3. AI-Driven Predictive Drug Recommendation System
+   - Developed an NLP-powered system achieving a 96% accuracy rate.
+   - Improved predictive model precision by 30% through data mining and statistical analysis.
+
+4. Integrating Deep Learning for Eye-Blinking Based Strain Analysis
+   - Achieved 98% accuracy in eye strain analysis using OpenCV and DL techniques.
+   - Reduced eye strain cases by 30% through a sophisticated alert mechanism.
+
+5. IPO Web Application & REST API Development
+   - Built an IPO web application using Django and PostgreSQL for IPO-related information.
+   - Designed RESTful APIs and authentication workflows for scalable backend systems.
+
     
     Hobbies:
     1.AI surfing
@@ -116,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Display AI's response
         const aiMessageElement = document.createElement('div');
         aiMessageElement.classList.add('chat-message', 'ai');
-        aiMessageElement.textContent = aiMessage;
+        aiMessageElement.innerHTML = `&#x1F916; ${aiMessage.replace(/\n/g, '<br>')}`;
         chatHistoryElement.appendChild(aiMessageElement);
   
         // Scroll to the bottom of the chat history
@@ -129,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
       console.error('Error:', error);
       const errorMessageElement = document.createElement('div');
       errorMessageElement.classList.add('chat-message', 'ai');
-      errorMessageElement.textContent = `An error occurred: ${error.message}`;
+      errorMessageElement.innerHTML = `&#x1F916; An error occurred: ${error.message}`;
       chatHistoryElement.appendChild(errorMessageElement);
     }
   });  
