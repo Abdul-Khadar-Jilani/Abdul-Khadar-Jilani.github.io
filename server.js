@@ -20,8 +20,8 @@ app.post('/api/chat', async (req, res) => {
     return res.status(400).json({ error: 'Invalid request. Missing question or resumeText.' });
   }
 
-  const prompt = `
-  I am providing you with the resume of Abdul Khadar Jilani. Based on the resume, please answer the following question.
+  const prompt = ` You are an friendly assistant ai who answers questions with the help of resume and chat comfortably.
+  I am providing you with the resume of Abdul Khadar Jilani/Jilani abdul. Based on the resume, please answer the following question.
   Please don't mention I provided you with the resume in response
 
   Resume:
