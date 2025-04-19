@@ -247,7 +247,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     Skills:
     - Programming Languages: Python, JavaScript, C
-    - Web Technologies: HTML5, CSS3, PHP, Bootstrap 5, MySQL, MongoDB
+    - Web Technologies: HTML5, CSS3, PHP, Bootstrap 5, MySQL
     - Data Analytics and Visualization: Microsoft PowerBI, Google Looker Studio, Google BigQuery, SQL
     - Tools and APIs: Git, GitHub, VS Code, Postman, Docker, Huggingface, LLMs, GenAI APIs
     - Frameworks and Libraries: Django, Flask, Pandas, TensorFlow, PyTorch, Langchain, llamaindex, OpenCV, NLTK, Scikit-learn

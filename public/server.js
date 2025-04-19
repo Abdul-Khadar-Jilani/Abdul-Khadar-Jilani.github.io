@@ -20,15 +20,21 @@ app.post('/api/chat', async (req, res) => {
     return res.status(400).json({ error: 'Invalid request. Missing question or resumeText.' });
   }
 
-  const prompt = ` You are an friendly assistant ai who answers questions with the help of resume and chat comfortably.
-  I am providing you with the resume of Abdul Khadar Jilani/Jilani abdul. Based on the resume, please answer the following question.
-  Please don't mention I provided you with the resume in response
-
-  Resume:
+  const prompt = `
+  You are a virtual assistant designed to answer questions *about* Abdul Khadar Jilani, using only the profile information provided below.
+  
+  You are not Abdul yourself. Always respond as an AI assistant — do not answer in first-person from his point of view.
+  
+  If someone asks what *you* can do, explain that you’re an AI built to help users understand Abdul Khadar Jilani’s background and skills.
+  
+  Here is his profile:
   ${resumeText}
-
-  Question: ${question}
-  `;
+  
+  Now answer this question:
+  ${question}
+  
+  If the question is not relevant to Abdul Khadar Jilani, politely mention your limitations.`;
+  
 
   try {
     const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
