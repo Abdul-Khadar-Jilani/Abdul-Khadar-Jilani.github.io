@@ -94,37 +94,35 @@ document.addEventListener("DOMContentLoaded", function () {
    
     Projects:
 1. Advanced Chatbot and PDF Interaction Application
- • Implemented Retrieval-Augmented Generation (RAG) with LLMs to enable accurate, context-aware responses to
- queries on PDF documents, improving information retrieval efficiency.
- • Enhanced user experience by integrating conversational AI with efficient document processing, ensuring seamless
- interaction and structured knowledge extraction.
- • Deployed AI-powered chatbot on Hugging Face Spaces and Streamlit Cloud, allowing scalable and real-time access
- to document-based insights.
+  • Implemented Retrieval-Augmented Generation (RAG) with LLMs to enable accurate, context-aware responses to queries on PDF documents, improving information retrieval efficiency.
+  • Enhanced user experience by integrating conversational AI with efficient document processing, ensuring seamless interaction and structured knowledge extraction.
+  • Deployed AI-powered chatbot on Hugging Face Spaces and Streamlit Cloud, allowing scalable and real-time access to document-based insights.
 
 2. GenAI-DBManager powered by Gemini API
- • Implemented Text-to-SQL Query Functionality: Introduced a conversational AI-driven SQL querying interface on
- Streamlit platform, enabling seamless retrieval of database results; improved user satisfaction by cutting average query
- execution time by 25% through real-time generation.
- • Integrated Full CRUD Operations: Created a interface enabling users to add, modify, and delete records directly in
- the database, ensuring efficient and real time data management.
- • Boosted SQL accessibility by 20% for non-technical users, simplifying data exploration and query generation.
+  • Implemented Text-to-SQL Query Functionality: Introduced a conversational AI-driven SQL querying interface on
+  Streamlit platform, enabling seamless retrieval of database results; improved user satisfaction by cutting average query
+  execution time by 25% through real-time generation.
+  • Integrated all CRUD Operations: Created a interface enabling users to add, modify, and delete records directly in
+  the database, ensuring efficient and real time data management.
+  • Boosted SQL accessibility by 20% for non-technical users, simplifying data exploration and query generation.
 
 3. AI-Driven Predictive Drug Recommendation System
-   - Developed an NLP-powered system achieving a 96% accuracy rate.
-   - Improved predictive model precision by 30% through data mining and statistical analysis.
+  • Utilized Natural Language Processing (NLP) and Machine Learning techniques to develop a highly accurate drug recommendation system, achieving an exceptional 96% accuracy rate.
+  • Applied advanced NLP techniques including stemming, lemmatization, and vectorization (TF-IDF, BoW) to preprocess and analyze patient data, improve text representation, and increase predictive model precision by 30%.
+  • Implemented an intuitive user interface for symptom input and customer/patient reviews, leading to a 25% increase in user engagement.
 
 4. Integrating Deep Learning for Eye-Blinking Based Strain Analysis
-   - Achieved 98% accuracy in eye strain analysis using OpenCV and DL techniques.
-   - Reduced eye strain cases by 30% through a sophisticated alert mechanism.
+  • Led the development of an advanced Strain Analysis system, achieving a 98% accuracy rate by leveraging Google Mediapipe and shape predictor datasets for precise eye movement tracking.
+  • Implemented a sophisticated alert mechanism that issues real-time notifications based on comprehensive blinking pattern analysis, resulting in a 30% reduction in eye strain cases
 
 5. IPO Web Application & REST API Development
-   - Built an IPO web application using Django and PostgreSQL for IPO-related information.
-   - Designed RESTful APIs and authentication workflows for scalable backend systems.
+  • Led the development of an IPO web application and REST API using Python, Django, Django REST Framework, and PostgreSQL, optimizing backend processes. Applied skills in database design, API development, and authentication for robust and scalable solutions.
+  • Engineered the front-end using HTML, CSS, JavaScript, and Bootstrap 5, ensuring responsive and user-friendly interfaces with a focus on real-time API implementation and seamless frontend interaction.
 
     
     Hobbies:
-    1.AI surfing
-    2.Reading and summarizing books
+    1.Web surfing about AIML and tech news
+    2.Reading blogs and articles
     3. Problem solving and DSA
 
     `; // Replace with the resume or fetch dynamically

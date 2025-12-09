@@ -22,6 +22,7 @@
   --blue-400: #61dafb;
   --blue-800: #0a61ae;
 }
+
 /* Apply 80% width for larger screens only */
 @media (min-width: 1024px) {
   .main-container {
@@ -40,9 +41,11 @@ body {
   background-color: #ffffff;
   color: #302d2d;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 /* header {
     background-color: #222;
     color: #fff;
@@ -53,15 +56,19 @@ html {
 a {
   text-decoration: none;
   color: var(--blue);
+
   &:hover {
     text-decoration: underline;
   }
 }
+
 header {
-  position:fixed;
+  position: fixed;
+
   @media (max-width: 1024px) {
     display: inline;
   }
+
   top: 0;
   left: 0;
   right: 0;
@@ -70,12 +77,13 @@ header {
   padding-top: 10px;
   padding: 0px 0px;
   /* padding-bottom: 10px; */
-  
+
   display: flex;
   justify-content: space-between;
   max-width: 1440px;
   margin: auto;
-  transition: background-color 0.3s ease, padding 0.3s ease;
+  transition: background-color 0.3s ease,
+  padding 0.3s ease;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   /* Initially transparent background */
   background-color: transparent;
@@ -95,20 +103,25 @@ header {
       width: 64px;
       margin-right: 20px;
       border-radius: 50%;
-      overflow: hidden; /* This will ensure the image stays within the circular boundary */
+      overflow: hidden;
+      /* This will ensure the image stays within the circular boundary */
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      
+
       .logo-img {
         width: 100%;
         height: 100%;
-        object-fit: cover; /* This ensures the image covers the area without distortion */
-        object-position: center; /* Centers the image */
+        object-fit: cover;
+        /* This ensures the image covers the area without distortion */
+        object-position: center;
+        /* Centers the image */
       }
     }
+
     .logo-text {
       flex: 1;
     }
   }
+
   nav {
     display: flex;
     align-items: center;
@@ -121,12 +134,14 @@ header {
       li {
         display: inline-block;
         margin-right: 10px;
+
         a {
           display: inline-block;
           padding: 10px 20px;
           color: var(--base);
           transition: background-color 0.3s ease;
           justify-content: center;
+
           &:hover {
             background-color: var(--base-100);
             border-radius: 10px;
@@ -159,6 +174,7 @@ header {
     flex-direction: column;
     align-items: center;
     width: 87%;
+
     nav {
       margin-top: 10px;
       width: 100%;
@@ -187,6 +203,7 @@ header {
   gap: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
+
   @media (max-width: 1440px) {
     padding-left: 30px;
     padding-right: 30px;
@@ -201,54 +218,74 @@ header {
   background-color: #081169;
   transition: ease 0.3s all;
   border-radius: 10px;
+
   &:hover {
     text-decoration: none;
     background-color: #0c1034;
   }
+
   &.white {
     background-color: white;
     color: var(--base-800);
+
     &:hover {
       color: var(--blue);
       background-color: var(--base-100);
     }
   }
+
   &.black {
     background-color: black;
     color: white;
+
     &:hover {
       color: var(--base-100);
       background-color: var(--base);
     }
   }
+
   &.ai {
-    background: linear-gradient(45deg, #00c6ff, #0072ff, #00ffcc, #00ccff); /* Initial gradient with multiple colors */
-    background-size: 300% 300%; /* To create a smooth color flow */
+    background: linear-gradient(45deg, #00c6ff, #0072ff, #00ffcc, #00ccff);
+    /* Initial gradient with multiple colors */
+    background-size: 300% 300%;
+    /* To create a smooth color flow */
     color: #000000;
-    animation: gradientAnimation 10s ease infinite; /* Longer, smooth animation */
+    animation: gradientAnimation 10s ease infinite;
+    /* Longer, smooth animation */
     transition: color 0.3s ease, background 0.3s ease;
+
     &:hover {
-      color: #ffffff; /* Hover text color */
-      background: linear-gradient(45deg, #ff0080, #ff8c00, #ff0080, #ffdd57); /* New gradient on hover */
-      background-size: 300% 300%; /* Smooth hover effect as well */
+      color: #ffffff;
+      /* Hover text color */
+      background: linear-gradient(45deg, #ff0080, #ff8c00, #ff0080, #ffdd57);
+      /* New gradient on hover */
+      background-size: 300% 300%;
+      /* Smooth hover effect as well */
     }
   }
 }
+
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+    /* Smooth transition in the middle */
+  }
+
+  100% {
+    background-position: 0% 50%;
+    /* Loop back to the start */
+  }
 }
-50% {
-    background-position: 100% 50%; /* Smooth transition in the middle */
-}
-100% {
-    background-position: 0% 50%; /* Loop back to the start */
-}
-}
+
 h1 {
   font-size: 56px;
   line-height: 1;
   margin-bottom: 10px;
+
   small {
     display: block;
     color: var(--base-400);
@@ -256,17 +293,21 @@ h1 {
     margin-bottom: 10px;
     font-weight: 100;
   }
+
   @media (max-width: 1024px) {
     font-size: 48px;
   }
 }
+
 .hero {
   display: flex;
   margin-top: 7%;
+
   @media (max-width: 1024px) {
     flex-direction: column;
     margin-top: 25%;
   }
+
   .leftSection {
     flex: 1;
     background-color: var(--blue-100);
@@ -275,19 +316,23 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     span {
       @media (max-width: 768px) {
         display: none;
       }
     }
+
     .call-to-action {
       margin-top: 20px;
       margin-bottom: 10px;
+
       a {
         margin-right: 10px;
         margin-bottom: 10px;
       }
     }
+
     .social-links {
       a {
         &:hover {
@@ -296,6 +341,7 @@ h1 {
       }
     }
   }
+
   .rightSection {
     flex: 1;
     background-color: var(--yellow);
@@ -318,15 +364,18 @@ h1 {
   border-radius: 30px;
   padding: 30px 0px;
   display: flex;
+
   @media (max-width: 1024px) {
     border-radius: 0px;
   }
+
   .marquee {
     width: 100vw;
     max-width: 100%;
     height: 128px;
     overflow: hidden;
     position: relative;
+
     .track {
       position: relative;
       white-space: nowrap;
@@ -339,24 +388,29 @@ h1 {
     }
   }
 }
+
 @keyframes marquee {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
 }
+
 h2 {
   font-size: 64px;
   line-height: 1;
   margin-bottom: 10px;
   text-align: center;
   color: var(--base-800);
+
   /* padding: 30px; */
   @media (max-width: 1024px) {
     font-size: 48px;
   }
+
   small {
     display: block;
     color: var(--base-400);
@@ -364,6 +418,7 @@ h2 {
     font-size: 0.53em;
   }
 }
+
 h3 {
   font-size: 32px;
   line-height: 1;
@@ -371,17 +426,21 @@ h3 {
   font-weight: 600;
   color: var(--base-800);
 }
+
 .skills {
   .holder-blue {
     background-color: var(--blue-100);
     border-radius: 30px;
     padding: 30px;
     display: flex;
+
     @media (max-width: 1024px) {
       flex-direction: column;
     }
+
     .left-column {
       flex: 1;
+
       ul {
         list-style: none;
         gap: 10px;
@@ -392,6 +451,7 @@ h3 {
           flex-direction: row;
           margin-right: 0px;
         }
+
         li {
           display: inline-block;
           background-color: var(--blue-400);
@@ -401,14 +461,17 @@ h3 {
         }
       }
     }
+
     .right-column {
       flex: 1;
+
       p {
         margin-bottom: 20px;
       }
     }
   }
 }
+
 .right-column h3 {
   color: #333;
   margin-bottom: 10px;
@@ -429,12 +492,14 @@ h3 {
 }
 
 .right-column ul li strong {
-  color: #222; /* Make the important text stand out */
+  color: #222;
+  /* Make the important text stand out */
 }
 
 .right-column ul li br {
   margin-bottom: 5px;
 }
+
 /* 
 .work-experience {
   .jobs {
@@ -601,33 +666,31 @@ h3 {
   text-align: center;
 }
 
-.about-containers {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-top: 2rem;
-}
+/* .about-containers is defined at the end of file using CSS Grid */
 
 /* Media Query for Screens 1024px or Smaller */
 @media screen and (max-width: 1024px) {
   #projects {
-    margin: 0 2rem; /* Reduce side margins for smaller screens */
+    margin: 0 2rem;
+    /* Reduce side margins for smaller screens */
     height: fit-content;
   }
 
   .experience-details-container {
-    flex-direction: column; /* Stack the project cards vertically */
+    flex-direction: column;
+    /* Stack the project cards vertically */
     align-items: center;
   }
 
   .details-container {
-    width: 80%; /* Each project card takes up 80% of the container width */
+    width: 80%;
+    /* Each project card takes up 80% of the container width */
     margin-bottom: 20px;
   }
 
   .article-container img {
-    width: 100%; /* Ensure images are responsive */
+    width: 100%;
+    /* Ensure images are responsive */
     height: auto;
   }
 
@@ -635,14 +698,16 @@ h3 {
     /* display: flex; */
     flex-wrap: wrap;
     align-items: center;
-    gap: 0.5rem; /* Reduce gap between buttons */
+    gap: 0.5rem;
+    /* Reduce gap between buttons */
   }
 }
 
 /* Additional Adjustments for Screens 600px or Smaller */
 @media screen and (max-width: 600px) {
   .details-container {
-    width: 95%; /* Make project cards slightly wider on very small screens */
+    width: 95%;
+    /* Make project cards slightly wider on very small screens */
   }
 
   .project-btn {
@@ -662,20 +727,24 @@ h3 {
     font-size: 1.25rem;
   }
 }
+
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
+
 .project-title {
   margin: 1rem;
   color: black;
+
   h2 {
     padding: 10px;
     text-align: center;
   }
 }
+
 .title {
   font-size: 3rem;
   text-align: center;
@@ -710,6 +779,7 @@ h3 {
     color: #000;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
+
     &:hover {
       color: var(--base);
       text-decoration: underline;
@@ -744,13 +814,16 @@ footer p {
 .email-icon {
   height: 2.5rem;
 }
+
 footer {
   /* Optional background color */
-  text-align: center; /* Center the footer text */
+  text-align: center;
+  /* Center the footer text */
 }
 
 footer nav {
-  margin-bottom: 15px; /* Space between the nav and the copyright text */
+  margin-bottom: 15px;
+  /* Space between the nav and the copyright text */
 }
 
 .nav-links-container {
@@ -764,7 +837,8 @@ footer nav {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 20px; /* Spacing between the links */
+  gap: 20px;
+  /* Spacing between the links */
 }
 
 .nav-links li {
@@ -773,7 +847,8 @@ footer nav {
 
 .nav-links a {
   text-decoration: none;
-  color: #000000; /* Adjust color as needed */
+  color: #000000;
+  /* Adjust color as needed */
   font-weight: 500;
   font-size: 1.5rem;
   padding: 10px;
@@ -783,7 +858,8 @@ footer nav {
     text-decoration: underline;
     text-decoration-color: gray;
     text-underline-offset: 1rem;
-    color: var(--base); /* Hover color */
+    color: var(--base);
+    /* Hover color */
   }
 }
 
@@ -795,6 +871,7 @@ footer p {
   text-align: center;
   padding-top: 1rem;
 }
+
 @media (max-width: 1240px) {
   #contact {
     height: 60vh;
@@ -808,11 +885,13 @@ footer p {
 
   .nav-links {
     flex-direction: column;
-    gap: 10px; /* Reduced gap for mobile view */
+    gap: 10px;
+    /* Reduced gap for mobile view */
   }
 
   .nav-links a {
-    font-size: 1.2rem; /* Adjusted font size for mobile view */
+    font-size: 1.2rem;
+    /* Adjusted font size for mobile view */
     padding: 10px 0;
   }
 
@@ -828,7 +907,8 @@ footer p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 0.1rem; /* Further reduced gap for a tighter fit */
+    gap: 0.1rem;
+    /* Further reduced gap for a tighter fit */
     text-align: center;
     flex-wrap: wrap;
     max-width: 100%;
@@ -836,21 +916,26 @@ footer p {
 
   .contact-icon,
   .email-icon {
-    height: 2rem; /* Reduce icon size */
-    width: 2rem; /* Ensure consistent size */
+    height: 2rem;
+    /* Reduce icon size */
+    width: 2rem;
+    /* Ensure consistent size */
   }
 
   .contact-info-container p {
-    font-size: 0.9rem; /* Reduce text size slightly */
+    font-size: 0.9rem;
+    /* Reduce text size slightly */
   }
 
   /* Footer adjustments */
   footer {
-    margin: 0rem 1rem 3rem 1rem; /* Reduced margin for mobile view */
+    margin: 0rem 1rem 3rem 1rem;
+    /* Reduced margin for mobile view */
   }
 
   footer p {
-    font-size: 1rem; /* Adjusted font size */
+    font-size: 1rem;
+    /* Adjusted font size */
     text-align: center;
   }
 }
@@ -934,6 +1019,7 @@ footer p {
   width: 100%;
   max-width: 1440px;
   margin: auto;
+
   @media (max-width: 1024px) {
     width: 85%;
   }
@@ -947,6 +1033,7 @@ footer p {
   justify-content: center;
   display: flex;
   height: 50px;
+
   & h3 {
     font-size: 2rem;
     margin: 0;
@@ -978,6 +1065,7 @@ footer p {
   border-top: 1px solid #ccc;
   background-color: #666666;
 }
+
 .chatbox-footer .chat-input::placeholder {
   color: #cacaca;
   font-weight: 200;
@@ -1009,24 +1097,44 @@ footer p {
 .chat-button:hover {
   background-color: #0c1034;
 }
+
 header.scrolled {
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   padding: 0 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-/* Update these specific styles in your existing CSS */
+
+/* Project Cards Grid - Fixed sizing */
 .about-containers {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
   margin-top: 2rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .about-containers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-containers {
+    grid-template-columns: 1fr;
+  }
 }
 
 .details-container {
   height: 100%;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .article-container {
@@ -1034,9 +1142,13 @@ header.scrolled {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
+  overflow: hidden;
 }
 
 .article-container img {
-  max-height: 250px;
+  max-height: 180px;
+  max-width: 100%;
   object-fit: cover;
+  border-radius: 1rem;
 }
