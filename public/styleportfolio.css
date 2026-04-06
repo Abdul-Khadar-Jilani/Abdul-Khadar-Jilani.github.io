@@ -311,6 +311,7 @@ h1 {
   .leftSection {
     flex: 1;
     background-color: var(--blue-100);
+    /* background: radial-gradient(circle at 20% 20%, #dff3ff 0%, #c5e8ff 32%, #eef7ff 72%, #ffffff 100%); */
     border-radius: 30px;
     padding: 30px;
     display: flex;
@@ -344,18 +345,245 @@ h1 {
 
   .rightSection {
     flex: 1;
-    background-color: var(--yellow);
+    background: radial-gradient(circle at 20% 20%, #dff3ff 0%, #c5e8ff 32%, #eef7ff 72%, #ffffff 100%);
     border-radius: 30px;
-    padding: 0px 30px;
+    padding: 24px;
+    min-height: 430px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+}
 
-    img {
-      margin-top: -60px;
-      max-width: 420px;
-      margin-bottom: 0px;
-    }
+.editorial-panel {
+  isolation: isolate;
+}
+
+.poster-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(10, 97, 174, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(10, 97, 174, 0.12) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: radial-gradient(circle at 50% 50%, black 40%, transparent 95%);
+  z-index: 0;
+}
+
+.poster-glow {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(1px);
+  opacity: 0.65;
+  z-index: 0;
+}
+
+.poster-glow-one {
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(10, 97, 174, 0.35) 0%, rgba(10, 97, 174, 0) 70%);
+  top: -60px;
+  right: -30px;
+  animation: floatOrb 8s ease-in-out infinite;
+}
+
+.poster-glow-two {
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(22, 170, 164, 0.28) 0%, rgba(22, 170, 164, 0) 70%);
+  bottom: -70px;
+  left: -40px;
+  animation: floatOrb 9s ease-in-out infinite reverse;
+}
+
+.poster-orbit {
+  width: min(100%, 420px);
+  height: auto;
+  opacity: 0.92;
+  z-index: 1;
+  animation: orbitPulse 8s ease-in-out infinite;
+}
+
+.poster-content {
+  position: absolute;
+  z-index: 2;
+  width: min(78%, 340px);
+  text-align: left;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.74);
+  backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 14px 22px rgba(0, 0, 0, 0.06);
+}
+
+.poster-kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #0a61ae;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.poster-title {
+  margin: 0.45rem 0;
+  color: #0e1726;
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  line-height: 1.25;
+  font-weight: 750;
+}
+
+.poster-subtitle {
+  margin: 0;
+  color: #334155;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.poster-chip {
+  position: absolute;
+  z-index: 2;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #0b2242;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(10, 97, 174, 0.22);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  animation: chipFloat 7s ease-in-out infinite;
+}
+
+.chip-top {
+  top: 30px;
+  right: 28px;
+}
+
+.chip-left {
+  left: 20px;
+  top: 145px;
+  animation-delay: 1.2s;
+}
+
+.chip-right {
+  right: 24px;
+  top: 138px;
+  animation-delay: 1.6s;
+}
+
+.chip-bottom {
+  left: 26px;
+  bottom: 30px;
+  animation-delay: 2s;
+}
+
+.chip-bottom-alt {
+  right: 24px;
+  bottom: 30px;
+  animation-delay: 2.4s;
+}
+
+@keyframes orbitPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+
+  50% {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+}
+
+@keyframes chipFloat {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+@keyframes floatOrb {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(10px, -8px, 0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero .rightSection {
+    min-height: 380px;
+  }
+
+  .chip-left {
+    top: 120px;
+  }
+
+  .chip-right {
+    top: 116px;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero .rightSection {
+    min-height: 360px;
+    padding: 18px;
+  }
+
+  .poster-content {
+    width: calc(100% - 34px);
+    bottom: 18px;
+    left: 17px;
+  }
+
+  .poster-chip {
+    font-size: 0.72rem;
+    padding: 0.32rem 0.66rem;
+  }
+
+  .chip-top {
+    top: 14px;
+    right: 14px;
+  }
+
+  .chip-left {
+    left: 12px;
+    top: 20px;
+  }
+
+  .chip-right {
+    right: 12px;
+    top: 58px;
+  }
+
+  .chip-bottom {
+    left: 14px;
+    bottom: 105px;
+  }
+
+  .chip-bottom-alt {
+    right: 14px;
+    bottom: 105px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .poster-orbit,
+  .poster-chip,
+  .poster-glow-one,
+  .poster-glow-two {
+    animation: none;
   }
 }
 
@@ -581,7 +809,11 @@ h3 {
 #projects {
   /* position: relative; */
   padding-top: 4vh;
-  margin: 0 10rem;
+  margin: 0 clamp(1rem, 5vw, 10rem);
+}
+
+.experience-details-container {
+  width: 100%;
 }
 
 .color-container {
@@ -596,13 +828,14 @@ h3 {
 }
 
 .project-title {
-  margin: 1rem;
+  margin: 1rem 0;
   color: black;
 }
 
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+  min-width: 8.5rem;
 }
 
 .section__text__p1 {
@@ -617,6 +850,7 @@ h3 {
 .btn-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -624,7 +858,7 @@ h3 {
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
-  width: 8rem;
+  width: auto;
   border-radius: 2rem;
 }
 
@@ -676,18 +910,6 @@ h3 {
     height: fit-content;
   }
 
-  .experience-details-container {
-    flex-direction: column;
-    /* Stack the project cards vertically */
-    align-items: center;
-  }
-
-  .details-container {
-    width: 80%;
-    /* Each project card takes up 80% of the container width */
-    margin-bottom: 20px;
-  }
-
   .article-container img {
     width: 100%;
     /* Ensure images are responsive */
@@ -705,11 +927,6 @@ h3 {
 
 /* Additional Adjustments for Screens 600px or Smaller */
 @media screen and (max-width: 600px) {
-  .details-container {
-    width: 95%;
-    /* Make project cards slightly wider on very small screens */
-  }
-
   .project-btn {
     width: 100%;
     margin-top: 10px;
@@ -1108,8 +1325,8 @@ header.scrolled {
 /* Project Cards Grid - Fixed sizing */
 .about-containers {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1.25rem;
   margin-top: 2rem;
   max-width: 1100px;
   margin-left: auto;
@@ -1135,20 +1352,45 @@ header.scrolled {
   flex-direction: column;
   box-sizing: border-box;
   overflow: hidden;
+  padding: clamp(1rem, 2vw, 1.5rem);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.details-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
 }
 
 .article-container {
-  flex: 1;
+  width: 100%;
+  aspect-ratio: 16 / 10;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0;
+  border-radius: 1.1rem;
+  background: #f4f7fb;
   overflow: hidden;
 }
 
 .article-container img {
-  max-height: 180px;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 1.1rem;
+  transition: transform 0.35s ease;
+}
+
+.details-container:hover .article-container img {
+  transform: scale(1.04);
+}
+
+.project-title {
+  font-size: clamp(1.1rem, 1.5vw, 1.35rem);
+  line-height: 1.35;
+  min-height: 3.2em;
+}
+
+.details-container .btn-container {
+  margin-top: auto;
 }

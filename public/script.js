@@ -55,12 +55,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     Experience:
     1. Eruvaka Technologies | Data Analyst (Sep 2024 - Present)
-      -  • Developed ETL pipelines by collecting and transforming large-scale IoT data from APIs, ensuring efficient data
-        integration into BigQuery for advanced analytics.
-      -  • Optimized query performance by writing complex SQL scripts in BigQuery, reducing data processing time by 30%
-        and improving system efficiency.
-      -  • Designed interactive dashboards in Power BI and Looker Studio, visualizing key aquaculture metrics such as pond
-        conditions and survival rates, improving real-time decision making and early detection of issues by 15%.
+      -  • Developed ETL pipelines by collecting and transforming large-scale IoT data from APIs, ensuring efficient data integration into BigQuery for advanced analytics.
+      -  • Optimized query performance by writing complex SQL scripts in BigQuery, reducing data processing time by 30% and improving system efficiency.
+      -  • Designed interactive dashboards in Power BI and Looker Studio, visualizing key aquaculture metrics such as pond conditions and survival rates, improving real-time decision making and early detection of issues by 15%.
 
     2. Bluestock Fintech | SDE Intern (Aug 2024 - Sep 2024)
        - Led the development of an IPO web application and REST API using Python, Django, and PostgreSQL.
@@ -123,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
     Hobbies:
     1.Web surfing about AIML and tech news
     2.Reading blogs and articles
-    3. Problem solving and DSA
+    3.Problem solving and DSA
 
     `; // Replace with the resume or fetch dynamically
     const prompt = `Resume: ${resumeText}\n\nQuestion: ${question}`;

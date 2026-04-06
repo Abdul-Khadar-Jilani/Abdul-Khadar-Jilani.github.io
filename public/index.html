@@ -7,6 +7,7 @@
   <title>ABDUL KHADAR JILANI Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/jpeg" href="/assets/ai%20image%2016.jpg" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="styleportfolio.css" />
@@ -58,17 +59,17 @@
         <div class="leftSection">
           <h1><small>Hi I'm </small>Abdul Khadar Jilani</h1>
           <p>
-            Passionate about building generative AI applications using large language models. I bring together backend
-            engineering, machine learning, and real-time data analytics.
+            I build reliable data pipelines with zero data loss, transform raw data into descriptive and predictive
+            insights, and develop machine learning and agentic AI solutions that solve real-world problems.
 
             <br>
             <span>
-              AI & DS graduate | Python • ML • LLMs • DS • AI • Web Dev • Data Science • Data Analytics
+              AI & DS graduate | Data Pipelines • Data Analytics • Predictive Insights • ML • LLMs • Agentic Engineering
 
             </span>
           </p>
           <div class="call-to-action">
-            <a href="Abdul_Khadar_Jilani_Resume.pdf" class="button black">View Resume</a>
+            <a href="Abdul_Khadar_Jilani_DataAnalyst.pdf" class="button black">View Resume</a>
             <a href="#contact" class="button white">Contact Me</a>
           </div>
           <div class="social-links">
@@ -80,9 +81,36 @@
             </a>
           </div>
         </div>
-        <div class="rightSection">
-          <!-- <img src="bgremoved.png" alt="" width="100%" /> -->
-          <img src="/assets/removed.webp" alt="" width="100%" />
+        <div class="rightSection editorial-panel" aria-label="AI visual poster">
+          <div class="poster-grid" aria-hidden="true"></div>
+          <div class="poster-glow poster-glow-one" aria-hidden="true"></div>
+          <div class="poster-glow poster-glow-two" aria-hidden="true"></div>
+          <svg class="poster-orbit" viewBox="0 0 420 360" role="img" aria-label="Abstract AI data flow illustration">
+            <defs>
+              <linearGradient id="orbitStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#0c3d84" />
+                <stop offset="100%" stop-color="#17a7a1" />
+              </linearGradient>
+            </defs>
+            <ellipse cx="210" cy="180" rx="148" ry="84" fill="none" stroke="url(#orbitStroke)" stroke-width="2" />
+            <ellipse cx="210" cy="180" rx="108" ry="52" fill="none" stroke="url(#orbitStroke)" stroke-width="1.5" />
+            <circle cx="210" cy="180" r="10" fill="#0a61ae" />
+            <circle cx="112" cy="138" r="7" fill="#0f7d76" />
+            <circle cx="292" cy="238" r="7" fill="#0f7d76" />
+            <circle cx="318" cy="154" r="5" fill="#0f7d76" />
+            <path d="M112 138 L210 180 L292 238 L318 154" fill="none" stroke="#0a61ae" stroke-width="1.5"
+              stroke-dasharray="5 4" />
+          </svg>
+          <div class="poster-content">
+            <p class="poster-kicker">AI and Data Science</p>
+            <p class="poster-title">Intelligent Solutions With Real-World Impact</p>
+            <p class="poster-subtitle">LLMs • RAG • Data Analytics • Agentic Engineering • Backend Engineering</p>
+          </div>
+          <span class="poster-chip chip-top">GenAI Builder</span>
+          <span class="poster-chip chip-right">Agentic Engineering</span>
+          <span class="poster-chip chip-left">Python + ML</span>
+          <span class="poster-chip chip-bottom">Data Analytics</span>
+          <span class="poster-chip chip-bottom-alt">API and Data Pipelines</span>
         </div>
       </section>
       <section class="logos container">
@@ -92,6 +120,8 @@
             <img src="/imgs/css.png" alt="CSS" />
             <img src="/imgs/javascript.png" alt="JavaScript" />
             <img src="/imgs/python.png" alt="Python" />
+            <img src="/imgs/airflow.png" alt="Airflow" />
+            <img src="/imgs/bigquery.png" alt="BigQuery">
             <img src="/imgs/mysql.png" alt="MySQL" />
             <img src="/imgs/docker.png" />
             <img src="/imgs/githubicon.png" />
@@ -101,8 +131,13 @@
             <img
               src="data:image/png;base64,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"
               alt="google-looker">
+            <!-- adding langchain icon -->
+            <img src="/imgs/langchain.png" alt="LangChain" />
+            <img src="/imgs/langgraph.png" alt="LangGraph" />
+            <img src="/imgs/huggingface-color.png" alt="HuggingFace" />
             <img src="/imgs/javascript.png" alt="JavaScript" />
             <img src="/imgs/python.png" alt="Node.js" />
+            <img src="/imgs/airflow.png" alt="Airflow" />
             <img src="/imgs/mysql.png" alt="GraphQL" />
             <img src="/imgs/docker.png" />
             <img src="/imgs/githubicon.png" />
@@ -166,10 +201,10 @@
           <div class="right-column">
             <h3>A bit about me</h3>
             <p>
-              AI & Data Science graduate with strong skills in Python, machine learning, and backend development. I
-              specialize in building GenAI web applications powered by LLMs, with a passion for creating real-world,
-              intelligent solutions. <br>I enjoy working across the stack — from APIs and data pipelines to dynamic
-              AI-driven user experiences.
+              AI & Data Science graduate focused on building reliable data pipelines, designing analytics-ready data
+              models using star schema methodology, and delivering executive and stakeholder dashboards that turn raw
+              aquaculture data into business decisions. <br>I also develop machine learning and agentic AI solutions,
+              working across pipelines, analytics, and intelligent applications.
             </p>
 
             <h3>Work Experience</h3>
@@ -178,20 +213,18 @@
                 Eruvaka Technologies<br>
                 Sep 2024 – Present<br>
                 <em>
-                  Developed ETL pipelines by collecting and transforming large-scale IoT data from APIs, ensuring
-                  efficient data integration into BigQuery for advanced analytics. Optimized query performance by
-                  writing complex SQL scripts in BigQuery, reducing data processing time by 30% and improving system
-                  efficiency by data modelling. Designed interactive dashboards in Power BI and Looker Studio,
-                  visualizing key aquaculture
-                  metrics such as pond conditions and survival rates, improving real-time decision making and early
-                  detection of issues by 15%.
+                  Built IoT data pipelines that collected, transformed, and loaded large-scale data from APIs with a
+                  focus on reliability and zero data loss. Designed analytics-ready data models using star schema
+                  methodology in BigQuery to support reporting and advanced analysis. Delivered executive dashboards and
+                  stakeholder dashboards in Power BI and Looker Studio, highlighting key aquaculture metrics and
+                  business-critical insights for faster decision-making.
                 </em>
               </li>
               <li><strong>Machine Learning & Deep Learning Intern</strong><br>
                 SmartInternz<br>
                 Jan 2023 – May 2023<br>
-                <em>Applied ML/DL models for real-world problems, achieving 92%+ accuracy in object/face recognition.
-                  Improved deep learning architectures for enhanced model performance.</em>
+                <em>Applied machine learning and deep learning models to real-world recognition tasks, improving model
+                  performance through experimentation, tuning, and evaluation.</em>
               </li>
             </ul>
             <h3>Education</h3>
@@ -202,11 +235,11 @@
                 <strong>CGPA - 8.98/10.0</strong><br>
                 2020 - 2024 | Completed
               </li>
-              <li><strong>Higher Secondary Education | Mathematics and Science</strong><br>
+              <!-- <li><strong>Higher Secondary Education | Mathematics and Science</strong><br>
                 Sri Chaitanya Junior College<br>
                 <strong>CGPA - 9.6/10.0</strong><br>
                 2018 - 2020 | Completed
-              </li>
+              </li> -->
               <!-- <li><strong>Secondary School Certificate (I - X)</strong><br>
                 Hemasree Hayagreeva E.M School<br>
                 <strong>GPA - 9.5/10.0</strong><br>
@@ -233,8 +266,8 @@
                 </figcaption>
               </div>
             </figure>
-            <h3>YouTube Content Creator</h3>
-            <div>2020-current</div>
+            <h3>Data Analyst</h3>
+            <div>2024-current</div>
             <p>Content creation online teaching people about how to code using HTML, CSS, JS.</p>
           </article>
           <article>
@@ -266,6 +299,7 @@
           
         </div>
       </section> -->
+      
       <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
@@ -273,35 +307,20 @@
           <div class="about-containers">
             <div class="details-container color-container">
               <div class="article-container">
-                <img src="./assets/project-1.webp" alt="Project 1" class="project-img" />
+                <img src="./assets/project-6.png" alt="Project 6" class="project-img" />
               </div>
-              <h2 class="experience-sub-title project-title">GenAi Database Manager</h2>
+              <h2 class="experience-sub-title project-title">Mpox Detection - AI Prediction System</h2>
               <div class="btn-container">
                 <button class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/Abdul-Khadar-Jilani/Gemini-DB-Analysis'">
-                  Github
+                  onclick="location.href='https://huggingface.co/spaces/Jilani001/mpox-detection/tree/main'">
+                  Hugging Face
                 </button>
                 <button class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://jilani-genaidb.streamlit.app/'">
+                  onclick="location.href='https://huggingface.co/spaces/Jilani001/mpox-detection/'">
                   Live Demo
                 </button>
               </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img src="./assets/project-2.webp" alt="Project 2" class="project-img" />
-              </div>
-              <h2 class="experience-sub-title project-title">Chat with PDF</h2>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/Abdul-Khadar-Jilani/ChatPDF'">
-                  Github
-                </button>
-                <button class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://jilani-chatpdf.streamlit.app/'">
-                  Live Demo
-                </button>
-              </div>
+
             </div>
             <div class="details-container color-container">
               <div class="article-container">
@@ -337,7 +356,39 @@
             </div>
             <div class="details-container color-container">
               <div class="article-container">
-                <img src="./assets/project-4.webp" alt="Project 3" class="project-img" />
+                <img src="./assets/project-1.webp" alt="Project 1" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">GenAi Database Manager</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Abdul-Khadar-Jilani/Gemini-DB-Analysis'">
+                  Github
+                </button>
+                <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://jilani-genaidb.streamlit.app/'">
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/project-2.webp" alt="Project 2" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">Chat with PDF</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Abdul-Khadar-Jilani/ChatPDF'">
+                  Github
+                </button>
+                <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://jilani-chatpdf.streamlit.app/'">
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/project-4.webp" alt="Project 4" class="project-img" />
               </div>
               <h2 class="experience-sub-title project-title">M-pox Visualization</h2>
               <div class="btn-container">
