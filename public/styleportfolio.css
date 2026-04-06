@@ -537,44 +537,57 @@ h1 {
 
 @media (max-width: 680px) {
   .hero .rightSection {
-    min-height: 360px;
+    min-height: 400px;
     padding: 18px;
   }
 
   .poster-content {
-    width: calc(100% - 34px);
-    bottom: 18px;
-    left: 17px;
+    width: min(calc(100% - 34px), 320px);
+    top: 26px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .poster-chip {
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     padding: 0.32rem 0.66rem;
+    animation: chipFloat 7s ease-in-out infinite;
+    max-width: calc(50% - 18px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .chip-top {
-    top: 14px;
-    right: 14px;
+    top: auto;
+    bottom: 126px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
   }
 
   .chip-left {
     left: 12px;
-    top: 20px;
+    top: auto;
+    bottom: 72px;
+    transform: none;
   }
 
   .chip-right {
     right: 12px;
-    top: 58px;
+    top: auto;
+    bottom: 72px;
+    transform: none;
   }
 
   .chip-bottom {
     left: 14px;
-    bottom: 105px;
+    bottom: 18px;
   }
 
   .chip-bottom-alt {
     right: 14px;
-    bottom: 105px;
+    bottom: 18px;
   }
 }
 
